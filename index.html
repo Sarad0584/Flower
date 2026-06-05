@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Petal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">🌸 Bloom & Petal</div>
+
+    <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Gift Finder</a></li>
+        <li><a href="#">Track Order</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="overlay">
+        <h1>Flowers That<br><span>Speak Volumes</span></h1>
+
+        <p>
+            Handcrafted bouquets for every moment.
+        </p>
+
+        <button>Explore Collection</button>
+    </div>
+</section>
+
+<!-- Collection -->
+<section class="collection">
+
+    <h4>OUR COLLECTION</h4>
+    <h2>Signature Bouquets</h2>
+
+    <div class="filters">
+        <button onclick="filterItems('all')">All</button>
+        <button onclick="filterItems('rose')">Roses</button>
+        <button onclick="filterItems('seasonal')">Seasonal</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card rose">
+            <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=800" alt="">
+            <div class="content">
+                <h3>Blush Romance</h3>
+                <p>$89</p>
+            </div>
+        </div>
+
+        <div class="card seasonal">
+            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800" alt="">
+            <div class="content">
+                <h3>Lilac Radiance</h3>
+                <p>$75</p>
+            </div>
+        </div>
+
+        <div class="card rose">
+            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=800" alt="">
+            <div class="content">
+                <h3>Princess Peony</h3>
+                <p>$99</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Occasion -->
+<section class="occasion">
+
+    <h4>BROWSE BY OCCASION</h4>
+    <h2>Find the Perfect Bloom</h2>
+
+    <div class="occasion-grid">
+
+        <div class="occasion-card">
+            <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=800">
+            <div class="text">
+                <h3>Anniversary & Love</h3>
+                <p>12 Bouquets</p>
+            </div>
+        </div>
+
+        <div class="occasion-card">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800">
+            <div class="text">
+                <h3>Birthday Joy</h3>
+                <p>18 Bouquets</p>
+            </div>
+        </div>
+
+        <div class="occasion-card">
+            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800">
+            <div class="text">
+                <h3>Congratulations</h3>
+                <p>9 Bouquets</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- Chat Bot -->
+
+<div class="chatbot">
+
+    <div class="chat-header" onclick="toggleChat()">
+        💬 Chat With Us
+    </div>
+
+    <div class="chat-body" id="chatBody">
+
+        <div class="bot-msg">
+            Hello 🌸<br>
+            How can I help you?
+        </div>
+
+        <div id="messages"></div>
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask something..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<section class="ai-section">
+
+    <div class="ai-left">
+
+        <p class="tag">AI-POWERED</p>
+
+        <h2>Meet Your Gift Assistant</h2>
+
+        <p class="description">
+            Not sure what to send? Our AI helper will find the perfect
+            bouquet based on the occasion, recipient, and your budget.
+        </p>
+
+        <div class="feature">
+            <span>🎯</span>
+            <div>
+                <h4>Personalized Picks</h4>
+                <p>Tailored recommendations for any relationship</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span>💡</span>
+            <div>
+                <h4>Occasion Expert</h4>
+                <p>From birthdays to anniversaries and beyond</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span>💰</span>
+            <div>
+                <h4>Budget Friendly</h4>
+                <p>Beautiful options at every price point</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+
+            <div class="bot-avatar">
+                🌸
+            </div>
+
+            <div>
+                <h3>Petal AI</h3>
+                <span>Online</span>
+            </div>
+
+        </div>
+
+        <div class="chat-messages" id="messages">
+
+            <div class="bot-message">
+                Hi there! 🌸 I'm Petal, your flower assistant.
+                Tell me about the occasion and I'll help find the perfect bouquet.
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="e.g. Birthday gift for my mom..."
+            >
+
+            <button onclick="sendMessage()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
